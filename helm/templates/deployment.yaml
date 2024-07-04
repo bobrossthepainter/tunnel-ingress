@@ -46,7 +46,7 @@ spec:
               value: {{ .Values.host }}
       containers:
         - name: remote-ping
-          image: dajudge/tunnel-ingress:{{ .Values.tag }}
+          image: {{ .Values.repository }}:{{ .Values.tag }}
           volumeMounts:
             - name: ssh-key
               mountPath: /ssh-key/

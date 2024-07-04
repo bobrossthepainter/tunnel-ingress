@@ -5,6 +5,7 @@ sshKeySecret: ssh-key
 pingSecret:
   name: ping-secret
   key: url
+repository: ghcr.io/bobrossthepainter/tunnel-ingress
 tag: 0.0.8
 ports:
   - exposedPort: 80
