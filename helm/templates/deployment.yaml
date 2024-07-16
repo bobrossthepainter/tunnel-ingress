@@ -28,7 +28,7 @@ spec:
             defaultMode: 0400
       initContainers:
         - name: tunnel-setup
-          image: dajudge/tunnel-ingress:{{ .Values.tag }}
+          image: {{ .Values.repository }}:{{ .Values.tag }}
           volumeMounts:
             - name: ssh-key
               mountPath: /ssh-key/
